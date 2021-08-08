@@ -4,59 +4,21 @@ import "fmt"
 
 func main() {
 
-	//Operadores aritméticos
+	helloVar := "Hola"
+	worldVar := "Mundo"
 
-	x := 10
-	y := 50
+	//Println imprime en consola y agrega salto de línea al final
+	fmt.Println(helloVar, worldVar)
+	fmt.Println(helloVar, worldVar)
 
-	//Suma
-	result := x + y
-	fmt.Println("Suma:", result)
+	//Printf
+	fmt.Printf("Mi primer programa fue un %s %s\n", helloVar, worldVar) // Usar %v cuando no se sabe el tipo de dato
 
-	//Resta
-	result = x - y
-	fmt.Println("Resta:", result)
+	//Sprintf genera un string pero no lo imprime en consola
+	message := fmt.Sprintf("Mi primer programa fue un %s %s\n", helloVar, worldVar)
+	fmt.Printf(message)
 
-	//Multiplicación
-	result = x * y
-	fmt.Println("Multiplicación:", result)
-
-	//División
-	result = x / y
-	fmt.Println("División:", result)
-
-	//Módulo
-	result = x % y
-	fmt.Println("Módulo:", result)
-
-	//Incremental
-	x++
-	fmt.Println("Incremental:", result)
-
-	//Decremental
-	x--
-	fmt.Println("Decremental:", result)
-
-	//Retos
-	//Área rectángulo, trapecio y círculo
-
-	//Área rectángulo
-	b := 8
-	h := 4
-	areaRectangulo := b * h
-	fmt.Println("Área Rectángulo:", areaRectangulo)
-
-	//Área trapecio
-	b1 := 3
-	b2 := 6
-	h = 4
-	areaTrapecio := (b1 * b2) * h / 2
-	fmt.Println("Área Trapecio:", areaTrapecio)
-
-	//Área círculo
-	const pi float64 = 3.1416
-	r := 5.0
-	areaCirculo := pi * r * r
-	fmt.Println("Área Circulo:", areaCirculo)
+	//Tipo de datos
+	fmt.Printf("helloVar es %T", helloVar) //Imprime el tipo de dato que le corresponde
 
 }
