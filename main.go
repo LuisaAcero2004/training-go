@@ -4,33 +4,59 @@ import "fmt"
 
 func main() {
 
-	//Declaración de constantes
+	//Operadores aritméticos
 
-	const pi float64 = 3.14
-	const pi2 = 3.1415
+	x := 10
+	y := 50
 
-	fmt.Println("pi:", pi)
-	fmt.Println("pi2:", pi2)
+	//Suma
+	result := x + y
+	fmt.Println("Suma:", result)
 
-	//Declaración de variables enteras
+	//Resta
+	result = x - y
+	fmt.Println("Resta:", result)
 
-	base := 12          //los dos puntos sirven para indicar que la variable no ha sido declarada antes
-	var altura int = 14 //Declaración de tipo de dato y se le asigna un valor
-	var area int        //Declaración tipo de dato
+	//Multiplicación
+	result = x * y
+	fmt.Println("Multiplicación:", result)
 
-	fmt.Println(base, altura, area)
+	//División
+	result = x / y
+	fmt.Println("División:", result)
 
-	//Zero values
-	var a int     //0
-	var b float64 //0
-	var c string  //""
-	var d bool    //false
+	//Módulo
+	result = x % y
+	fmt.Println("Módulo:", result)
 
-	fmt.Println(a, b, c, d)
+	//Incremental
+	x++
+	fmt.Println("Incremental:", result)
 
-	//Area de un cuadrado
-	const baseCuadrado = 10
-	areaCuadrado := baseCuadrado * baseCuadrado
-	fmt.Println("Area Cuadrado:", areaCuadrado)
+	//Decremental
+	x--
+	fmt.Println("Decremental:", result)
+
+	//Retos
+	//Área rectángulo, trapecio y círculo
+
+	//Área rectángulo
+	b := 8
+	h := 4
+	areaRectangulo := b * h
+	fmt.Println("Área Rectángulo:", areaRectangulo)
+
+	//Área trapecio
+	b1 := 3
+	b2 := 6
+	h = 4
+	areaTrapecio := (b1 * b2) * h / 2
+	fmt.Println("Área Trapecio:", areaTrapecio)
+
+	//Área círculo
+	const pi float64 = 3.1416
+	r := 5.0
+	areaCirculo := pi * r * r
+	fmt.Println("Área Circulo:", areaCirculo)
 
 }
